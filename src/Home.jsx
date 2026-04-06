@@ -10,7 +10,7 @@ const Home = () => {
     e.preventDefault();
     setEnviando(true);
     try {
-      const res = await fetch('http://localhost:3000/api/contacto', {
+      const res = await fetch('https://kenseiway-web.onrender.com/api/contacto', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
